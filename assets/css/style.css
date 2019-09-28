@@ -1,3 +1,13 @@
+/* across all pages */
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 h1 {
     background-color: #4aaaa5;
     color: white;
@@ -16,6 +26,7 @@ h2 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
 }
 
 p.link-dash {
@@ -26,27 +37,10 @@ p.link-dash {
 .h2-box {
     background-color: #4aaaa5;
     color: white;
-    width: 18%;
+    width: auto;
     height: auto;
     padding: 10px;
     text-align: center;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.justify-content-end {
-    justify-content: end;
-}
-
-.img-fluid {
-    height: 10%;
-    width: auto;
 }
 
 .nav {
@@ -56,6 +50,23 @@ p.link-dash {
 
 .nav-item {
     align-content: center;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #666666;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 2px #4aaaa5;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.footer-content {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .row {
@@ -74,7 +85,48 @@ body {
     background-image: url(../images/prism.png)
 }
 
+.navbar fixed bottom {
+    background-color: white;
+    color: black;
+}
+
+
+/* About specific */
+
+.img-fluid {
+    height: auto;
+    width: auto;
+}
+
+
+/* Contact Specific */
+
 .btn {
     color: white;
     background-color: #4aaaa5;
+}
+
+
+/* Portfolio specific*/
+
+.card {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+h5 {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 14px;
+    text-align: center;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
